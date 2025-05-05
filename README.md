@@ -127,6 +127,7 @@ Use only for educational or showcase purposes.
 ## 👤 Author
 
 Built by [TopDP7](https://github.com/TopDP7)  
-Telegram / GitHub / LinkedIn: *Add your links here*
+
+LinkedIn:linkedin.com/in/oleksandr-kosenko-/
 
 ---
