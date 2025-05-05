@@ -44,14 +44,89 @@ The ERC20 token is minted with a fixed supply of **1,000,000 TTK** tokens and as
 
 ```bash
 npm install
-npx hardhat compile 
-npx hardhat node
+```
 
+### 2. Compile contracts
+
+```bash
+npx hardhat compile
+```
+
+### 3. Run local blockchain (optional)
+
+```bash
+npx hardhat node
+```
+
+---
+
+## 🌐 Deploy to BSC Testnet
+
+1. Add your `.env` file to the project root:
+
+```bash
+PRIVATE_KEY=0xYOUR_PRIVATE_KEY
+```
+
+> ⚠️ Use a wallet that holds **testnet BNB** only.  
+> You can get tBNB from the [BSC Testnet Faucet](https://testnet.bnbchain.org/faucet-smart)
+
+2. Run deployment:
+
+```bash
+npx hardhat run scripts/deploy.js --network bscTestnet
+```
+
+---
+
+## 🤖 Interact with Contracts
+
+You can simulate real staking behavior with:
+
+```bash
+npx hardhat run scripts/interact.js --network bscTestnet
+```
+
+It will:
+- Approve tokens
+- Stake 1000 tokens
+- Wait 10 seconds
+- Unstake and show reward earned
+
+---
+
+## 📁 Project Structure
+
+```
+staking-dapp/
+├── contracts/
+│   ├── Token.sol
+│   └── StakingContract.sol
+├── scripts/
+│   ├── deploy.js
+│   └── interact.js
+├── hardhat.config.js
+├── .env             # not committed
+└── README.md
+```
+
+---
+
+## 🔐 Security Notes
+
+This is a demo project. It does **not** implement:
+
+- Slashing or lock-up periods
+- Multi-user reward pools
+- Front-running protection
+
+Use only for educational or showcase purposes.
 
 ---
 
 ## 👤 Author
 
 Built by [TopDP7](https://github.com/TopDP7)  
-Telegram: @d_kw_f  
-LinkedIn: linkedin.com/in/oleksandr-kosenko-/
+Telegram / GitHub / LinkedIn: *Add your links here*
+
+---
