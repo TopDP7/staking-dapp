@@ -44,6 +44,11 @@ The ERC20 token is minted with a fixed supply of **1,000,000 TTK** tokens and as
 
 ```bash
 npm install
+npx hardhat compile 
+npx hardhat node
+
+
+---
 
 ## 👤 Author
 
