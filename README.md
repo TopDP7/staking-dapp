@@ -44,3 +44,9 @@ The ERC20 token is minted with a fixed supply of **1,000,000 TTK** tokens and as
 
 ```bash
 npm install
+
+## 👤 Author
+
+Built by [TopDP7](https://github.com/TopDP7)  
+Telegram: @d_kw_f  
+LinkedIn: linkedin.com/in/oleksandr-kosenko-/
